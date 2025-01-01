@@ -1,4 +1,4 @@
-package intermediate.classesandobjects;
+package intermediate.classesandobjects.inheritance.car;
 
 public class Car {
     String brand;
@@ -6,13 +6,15 @@ public class Car {
     int numberSeats;
     int milleage = 150000;
     String color;
+    String fuel;
 
-    public Car(String brand, int price, int numberSeats, int milleage, String color) {
+    public Car(String brand, int price, int numberSeats, int milleage, String color, String fuel) {
         this.brand = brand;
         this.price = price;
         this.numberSeats = numberSeats;
         this.milleage = milleage;
         this.color = color;
+        this.fuel = fuel;
     }
 
     public void startEngine() {
@@ -21,7 +23,7 @@ public class Car {
 
     public void Description() {
         System.out.println("The price of  this car is : " + price);
-        System.out.println("This Car have " + milleage);
+        System.out.println("This a " + fuel + " car and have " + milleage + "km");
     }
 
     public void GenerationCar() {
@@ -31,4 +33,5 @@ public class Car {
             System.out.println("This car have more milleages");
         }
     }
+
 }
